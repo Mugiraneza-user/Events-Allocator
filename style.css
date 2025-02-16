@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.mains {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 400px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo h2 span {
+    color: peru;
+    font-style: italic;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: peru;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.search input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.search button {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: peru;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search button:hover {
+    background: chocolate;
+}
+
+#cat-filtering {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#cat-filtering ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 15px;
+}
+
+#cat-filtering ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.event-card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.event-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+header .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links li {
+    display: inline;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+//* General Page Styles */
+
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+header .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links li {
+    display: inline;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header .nav-links a:hover {
+    color: #ffd700;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    max-width: 900px; /* Increased max-width */
+    width: 100%;
+    margin: 50px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    background-image: linear-gradient(to right, #4CAF50, #45a049); /* Gradient background */
+    color: white;
+}
+
+.contact-form-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.contact-form-section p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 40px;
+}
+
+.contact-form-section .form-group {
+    margin-bottom: 25px;
+}
+
+.contact-form-section label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #f1f1f1;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+.submit-button{
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+}
+.submit-button:hover{
+    background-color: #45a049;
+    transform: scale(1.4s);
+    color: white;
+    border: 2px solid white;
+
+}
+.contact-form-section input:focus,
+.contact-form-section textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background-color: #fff;
+}
+
+.contact-form-section input[type="submit"] {
+    background-color: #ff5733; /* Bright orange-red color */
+    color: white;
+    padding: 15px 35px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px; /* Width of the button */
+    margin-top: 20px;
+}
+
+.contact-form-section input[type="submit"]:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form-section {
+        padding: 30px;
+        width: 90%;
+    }
+
+    .contact-form-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact-form-section input,
+    .contact-form-section textarea {
+        font-size: 1rem;
+    }
+
+    .contact-form-section input[type="submit"] {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+header .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links li {
+    display: inline;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Services Section Styles */
+.services-section {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.services-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.services-section .container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service-card {
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.service-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
